@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Codecool.BookDb</name>
+    </assembly>
+    <members>
+        <member name="M:Codecool.BookDb.Model.IAuthorDao.Add(Codecool.BookDb.Model.Author)">
+            <summary>
+            Adds a new object to the database and sets the new ID.
+            </summary>
+            <param name="author">A new object, with ID not yet set (null). </param>
+        </member>
+        <member name="M:Codecool.BookDb.Model.IAuthorDao.Update(Codecool.BookDb.Model.Author)">
+            <summary>
+            Updates existing object's data in the database.
+            </summary>
+            <param name="author">An object from the database, with ID already set.</param>
+        </member>
+        <member name="M:Codecool.BookDb.Model.IAuthorDao.Get(System.Int32)">
+            <summary>
+            Get object by ID.
+            </summary>
+            <param name="id">ID to search by</param>
+            <returns>An object with a given ID, or null if not found.</returns>
+        </member>
+        <member name="M:Codecool.BookDb.Model.IAuthorDao.GetAll">
+            <summary>
+            Get all objects.
+            </summary>
+            <returns>List of all objects of this type in the database.</returns>
+        </member>
+        <member name="M:Codecool.BookDb.Model.IBookDao.Add(Codecool.BookDb.Model.Book)">
+            <summary>
+            Adds a new object to the database and sets the new ID.
+            </summary>
+            <param name="book">A new object, with ID not yet set (null).</param>
+        </member>
+        <member name="M:Codecool.BookDb.Model.IBookDao.Update(Codecool.BookDb.Model.Book)">
+            <summary>
+            Updates existing object's data in the database.
+            </summary>
+            <param name="book">An object from the database, with ID already set.</param>
+        </member>
+        <member name="M:Codecool.BookDb.Model.IBookDao.Get(System.Int32)">
+            <summary>
+            Get object by ID.
+            </summary>
+            <param name="id">ID to search by</param>
+            <returns>An object with a given ID, or null if not found.</returns>
+        </member>
+        <member name="M:Codecool.BookDb.Model.IBookDao.GetAll">
+            <summary>
+            Get all objects.
+            </summary>
+            <returns>List of all objects of this type in the database.</returns>
+        </member>
+        <member name="M:Codecool.BookDb.View.UserInterface.Choice(System.String)">
+            <summary>
+            Keep asking user for input until it is one of the provided chars
+            </summary>
+            <param name="options">Available characters as options like "abcd"</param>
+            <returns>Choosen option</returns>
+        </member>
+        <member name="M:Codecool.BookDb.View.UserInterface.ReadString(System.String,System.String)">
+            <summary>
+            Ask user for data. If no data was provided use default value.
+            </summary>
+            <param name="prompt">Text to show before cursor</param>
+            <param name="defaultValue">If only hit enter this option will be chosen.</param>
+            <returns>Read string</returns>
+        </member>
+        <member name="M:Codecool.BookDb.View.UserInterface.ReadDate(System.String,System.DateOnly)">
+            <summary>
+            Ask user for a date. 
+            User must be informed what the default value is.
+            If provided date is in invalid format, ask user again.
+            </summary>
+            <param name="prompt">Text to show before cursor</param>
+            <param name="defaultValue">If no data was provided use default value.</param>
+            <returns>Date value received fomr the user or default</returns>
+        </member>
+        <member name="M:Codecool.BookDb.View.UserInterface.ReadInt(System.String,System.Int32)">
+            <summary>
+            Ask user for a number. User must be informed what the default value is.
+            </summary>
+            <param name="prompt">Text to show before cursor</param>
+            <param name="defaultValue">If no data was provided this value used.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
